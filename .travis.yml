@@ -1,3 +1,11 @@
 node_js:
   - node
 language: node_js
+deploy:
+  provider: npm
+  email: allen.goodman@icloud.com
+  api_key:
+    secure: xsx3FlI9/stnrWKDtLRtY8FuvQLPWF5S8m5efopN4nHi2zLo4MWQLx9Go/LBL/sNPAHecPtxXAkBdREVWOoXCEtOEpDa6+S3Npfy6cGNSnuPThkLLGIiCcymwAgvGns34GxEspSsCpyV4pfNKQqxQrarFHaCgyh2dLC4l65kvC+xv7rimmoNz5M14cTC/DyrJAoPzx3Wx6/4Ke+neZk0im/rEnv7TyZuEsvGAAj5Zix6GK7AyOaHckjH3KAvY4xB1Rj9ghQBeTsO3K9fQ6HgilwT5r1+wmOyhmj5Tccd6ByydmwJWjO0VPgPAiciH7vtTMyW98jOzL9xKYhrYkRcAXTI7vE9PwgejbqIERvdwXP52wnCZFf+CDhOjbTu787PAOV1xhtTwcOwqAD1d421nUBC2g6Idp/QJXDlBkwCaG6T9PnMiteht7zUl9AoBNA9Mx1gJF+m4qhH/EB0u4BWVuEky1/Pgrd/fRW83Zq8ktxFHfX2bDAJWXlRVANv0LvRwoVQ419C5ziuiJ3N4P2BeMUaHCMWUwXSIKg7nvHiYiGZzZVRjPcHaPM19YoY6wuE4jwdaFI4YM/nfIB+TyzIv9glBsqfAIzd8DmanzkZf+PVMMYmv4ZnGBEu1+tAQ2JJb28/BB6gCrjbXBT+di2yG05mKogKafDD1+CL9T8e5aM=
+  on:
+    tags: true
+    repo: broadinstitute/react-broad-bootstrap
