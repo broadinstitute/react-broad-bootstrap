@@ -1,7 +1,7 @@
 // generate docs css
 
 @import "./variables.scss";
-@import "./bootstrap/_mixins.scss";
+@import "./node_modules/bootstrap/scss/_mixins.scss";
 @import "./custom/syntax.scss";
 @import "./custom/docs.scss";
 

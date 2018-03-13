@@ -18,8 +18,8 @@ $theme-colors: (
   dark: $gray-800
 );
 
-@import "./bootstrap/_functions.scss";
-@import "./bootstrap/_variables.scss";
+@import "./node_modules/bootstrap/scss/_functions.scss";
+@import "./node_modules/bootstrap/scss/_variables.scss";
 
 // deleted bs.4 vars
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
