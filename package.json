@@ -25,9 +25,8 @@
     },
     "main": "gulpfile.js",
     "name": "react-broad-bootstrap",
-    "private": true,
     "scripts": {
         "start": "./node_modules/.bin/gulp docs"
     },
-    "version": "0.0.1"
+    "version": "0.0.2"
 }

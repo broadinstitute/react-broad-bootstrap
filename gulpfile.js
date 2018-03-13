@@ -21,17 +21,6 @@ var Paths = {
   SCSS_TOOLKIT_SOURCES : './scss/toolkit*',
   SCSS                 : './scss/**/**',
   JS                   : [
-      "./js/bootstrap/util.js",
-      "./js/bootstrap/alert.js",
-      "./js/bootstrap/button.js",
-      "./js/bootstrap/carousel.js",
-      "./js/bootstrap/collapse.js",
-      "./js/bootstrap/dropdown.js",
-      "./js/bootstrap/modal.js",
-      "./js/bootstrap/tooltip.js",
-      "./js/bootstrap/popover.js",
-      "./js/bootstrap/scrollspy.js",
-      "./js/bootstrap/tab.js",
       './js/custom/*'
     ]
 }
