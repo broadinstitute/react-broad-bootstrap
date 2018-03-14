@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import Util from 'bootstrap/util'
+import Util from 'bootstrap/js/dist/util'
 
 /**
  * --------------------------------------------------------------------------

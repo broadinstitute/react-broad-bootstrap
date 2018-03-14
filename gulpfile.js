@@ -1,29 +1,29 @@
-var fs           = require('fs')
-var gulp         = require('gulp')
-var path         = require('path')
-var sass         = require('gulp-sass')
-var autoprefixer = require('gulp-autoprefixer')
-var sourcemaps   = require('gulp-sourcemaps')
-var cleanCSS     = require('gulp-clean-css')
-var rename       = require('gulp-rename')
-var concat       = require('gulp-concat')
-var uglify       = require('gulp-uglify')
-var connect      = require('gulp-connect')
-var open         = require('gulp-open')
-var babel        = require('gulp-babel')
-var replace      = require('gulp-replace')
-var wrapper      = require('gulp-wrapper')
+let fs           = require('fs');
+let gulp         = require('gulp');
+let path         = require('path');
+let sass         = require('gulp-sass');
+let autoprefixer = require('gulp-autoprefixer');
+let sourcemaps   = require('gulp-sourcemaps');
+let cleanCSS     = require('gulp-clean-css');
+let rename       = require('gulp-rename');
+let concat       = require('gulp-concat');
+let uglify       = require('gulp-uglify');
+let connect      = require('gulp-connect');
+let open         = require('gulp-open');
+let babel        = require('gulp-babel');
+let replace      = require('gulp-replace');
+let wrapper      = require('gulp-wrapper');
 
-var Paths = {
+let Paths = {
   HERE                 : './',
   DIST                 : 'build',
-  DIST_TOOLKIT_JS      : 'build/toolkit.js',
+  DIST_TOOLKIT_JS      : 'build/theme.js',
   SCSS_TOOLKIT_SOURCES : './scss/toolkit*',
   SCSS                 : './scss/**/**',
   JS                   : [
-      './js/custom/*'
+      './js/theme/*'
     ]
-}
+};
 
 var banner  = '/*!\n' +
   ' * Bootstrap\n' +

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "toolkit-entypo";
+  font-family: "entypo";
   src: url('#{$icon-font-path}#{$icon-font-name}.eot');
   src: url('#{$icon-font-path}#{$icon-font-name}.eot?#iefix') format('eot'),
        url('#{$icon-font-path}#{$icon-font-name}.woff2') format('woff2'),
@@ -13,7 +13,7 @@
   position: relative;
   top: 2px;
   display: inline-block;
-  font-family: "toolkit-entypo";
+  font-family: "entypo";
   speak: none;
   font-size: 100%;
   font-style: normal;

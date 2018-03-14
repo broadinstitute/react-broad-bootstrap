@@ -14,47 +14,47 @@ import $ from 'jquery'
   // ======================
 
   var Affix = function (element, options) {
-    this.options = $.extend({}, Affix.DEFAULTS, options)
+    this.options = $.extend({}, Affix.DEFAULTS, options);
 
     this.$target = $(this.options.target)
       .on('scroll.bs.affix.data-api', $.proxy(this.checkPosition, this))
-      .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
+      .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this));
 
-    this.$element     = $(element)
-    this.affixed      = null
-    this.unpin        = null
-    this.pinnedOffset = null
+    this.$element     = $(element);
+    this.affixed      = null;
+    this.unpin        = null;
+    this.pinnedOffset = null;
 
     this.checkPosition()
-  }
+  };
 
-  Affix.VERSION  = '3.3.6'
+  Affix.VERSION  = '3.3.6';
 
-  Affix.RESET    = 'affix affix-top affix-bottom'
+  Affix.RESET    = 'affix affix-top affix-bottom';
 
   Affix.DEFAULTS = {
     offset: 0,
     target: window
-  }
+  };
 
   Affix.prototype.getState = function (scrollHeight, height, offsetTop, offsetBottom) {
-    var scrollTop    = this.$target.scrollTop()
-    var position     = this.$element.offset()
-    var targetHeight = this.$target.height()
+    var scrollTop    = this.$target.scrollTop();
+    var position     = this.$element.offset();
+    var targetHeight = this.$target.height();
 
-    if (offsetTop != null && this.affixed == 'top') return scrollTop < offsetTop ? 'top' : false
+    if (offsetTop != null && this.affixed == 'top') return scrollTop < offsetTop ? 'top' : false;
 
     if (this.affixed == 'bottom') {
-      if (offsetTop != null) return (scrollTop + this.unpin <= position.top) ? false : 'bottom'
+      if (offsetTop != null) return (scrollTop + this.unpin <= position.top) ? false : 'bottom';
       return (scrollTop + targetHeight <= scrollHeight - offsetBottom) ? false : 'bottom'
     }
 
-    var initializing   = this.affixed == null
-    var colliderTop    = initializing ? scrollTop : position.top
-    var colliderHeight = initializing ? targetHeight : height
+    var initializing   = this.affixed == null;
+    var colliderTop    = initializing ? scrollTop : position.top;
+    var colliderHeight = initializing ? targetHeight : height;
 
-    if (offsetTop != null && scrollTop <= offsetTop) return 'top'
-    if (offsetBottom != null && (colliderTop + colliderHeight >= scrollHeight - offsetBottom)) return 'bottom'
+    if (offsetTop != null && scrollTop <= offsetTop) return 'top';
+    if (offsetBottom != null && (colliderTop + colliderHeight >= scrollHeight - offsetBottom)) return 'bottom';
 
     return false
   }

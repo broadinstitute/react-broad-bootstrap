@@ -117,7 +117,7 @@
       // Boolean - Determines whether to draw tooltips on the canvas or not - attaches events to touchmove & mousemove
       showTooltips: true,
 
-      // Boolean - Determines whether to draw built-in tooltip or call custom tooltip function
+      // Boolean - Determines whether to draw built-in tooltip or call theme tooltip function
       customTooltips: false,
 
       // Array - Array of string names to attach tooltip events

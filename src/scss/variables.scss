@@ -28,13 +28,13 @@ $nav-tabs-active-link-hover-bg: $body-bg !default;
 
 // icons
 $icon-font-path: "../fonts/";
-$icon-font-name: "toolkit-entypo";
+$icon-font-name: "entypo";
 
 // Body
 $body-bg: #f5f8fa;
 
 // Component borders
-// Create a custom variable to base the border-color off the body background.
+// Create a theme variable to base the border-color off the body background.
 $toolkit-border-color:  darken(#f5f8fa, 10%);
 // Then apply that to key components
 $panel-default-border:  $toolkit-border-color;
